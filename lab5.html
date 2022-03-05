@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form1">
+        <h1 class="formheader">Pizza Order Form</h1>
+        <fieldset>
+            <input type="range" min="1" max="4" value="1" name="range" id="range">
+            <span id="pizzaText">Size: Small 6$</span>
+            <img id="pizza" src="pizza.png">
+
+        </fieldset>
+        <section>
+            <fieldset>
+                <legend>Meat Toppings(+2$ for each)</legend>
+                <input type="checkbox" name="Meat" id="Pepperoni" value="Pepperoni">
+                <label for="Pepperoni">Pepperoni</label><br>
+                <input type="checkbox" name="Meat" id="Sausage" value="Sausage">
+                <label for="Sausage">Sausage</label><br>
+                <input type="checkbox" name="Meat" id="Ground Beef" value="Ground Beef">
+                <label for="Ground Beef">Ground Beef</label><br>
+                <input type="checkbox" name="Meat" id="Anchovy" value="Anchovy">
+                <label for="Anchovy">Anchovy</label><br>
+                <input type="checkbox" name="Meat" id="Chicken" value="Chicken">
+                <label for="Chicken">Chicken</label><br>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Veggies(+1$ for each)</legend>
+                <input type="checkbox" name="Veg" id="Tomatoes" value="Tomatoes">
+                <label for="Tomatoes">Tomatoes</label><br>
+                <input type="checkbox" name="Veg" id="Onions" value="Onions">
+                <label for="Onions">Onions</label><br>
+                <input type="checkbox" name="Veg" id="Olives" value="Olives">
+                <label for="Olives">Olives</label><br>
+                <input type="checkbox" name="Veg" id="Mushrooms" value="Mushrooms">
+                <label for="Mushrooms">Mushrooms</label><br>
+                <input type="checkbox" name="Veg" id="Pineapple" value="Pineapple">
+                <label for="Pineapple">Pineapple</label><br>
+                <input type="checkbox" name="Veg" id="Spinach" value="Spinach">
+                <label for="Spinach">Spinach</label><br>
+                <input type="checkbox" name="Veg" id="Jalapeno" value="Jalapeno">
+                <label for="Jalapeno">Jalapeno</label><br>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Cheese</legend>
+                <input type="radio" name="cheese" id="Regular Cheese" value="Regular Cheese">
+                <label for="Regular Cheese">Regular Cheese</label><br>
+                <input type="radio" name="cheese" id="No Cheese" value="No Cheese">
+                <label for="No Cheese">No Cheese</label><br>
+                <input type="radio" name="cheese" id="Extra Cheese ($3)" value="Extra Cheese">
+                <label for="Extra Cheese ($3)">Extra Cheese ($3)</label><br>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Payment</legend>
+                <input type="radio" name="payment" id="Cash">
+                <label for="Cash">Cash</label><br>
+                <input type="radio" name="payment" id="MasterCard">
+                <label for="MasterCard">MasterCard</label><br>
+                <input type="radio" name="payment" id="Visa">
+                <label for="Visa">Visa</label><br>
+            </fieldset>
+        </section>
+        <input type="button" id="form1Next" value="Next">
+    </form>
+    <form id="form2">
+        <label for="First Name">First Name:</label><br>
+        <input class="form2Field" type="text" name="First Name" id="First Name"><br>
+        <label for="Last Name">Last Name:</label><br>
+        <input class="form2Field" type="text" name="Last Name" id="Last Name"><br>
+        <label for="E-mail">E-mail:</label><br>
+        <input class="form2Field" type="text" name="E-mail" id="E-mail"><br>
+        <label for="Phone Number">Phone Number:</label><br>
+        <input class="form2Field" type="text" name="Phone Number" id="Phone Number"><br>
+        <label for="City">City:</label><br>
+        <select class="form2Field" name="City" id="City">
+            <option disabled selected value>--Please choose an option--</option>
+            <option>Beirut</option>
+            <option>Tripoli</option>
+            <option>Sour</option>
+        </select><br>
+        <label for="Address">Address:</label><br>
+        <Textarea class="form2Field" id="Address" rows="4"></Textarea>
+        <div class="sidebysidebtns">
+            <input type="button" id="form2Back" value="Back">
+            <input type="button" id="form2Next" value="Next">
+        </div>
+
+    </form>
+    <form id="form3">
+        <div id="OrderSummary">
+            <h1>Order Summary</h1>
+            <h2>Deliver to</h2>
+            <p id="dlvrTo"></p>
+            <h2>Order</h2>
+            <ul id="orderList"></ul>
+            <h2 id="total">Total</h2>
+            <div><input type="button" id="form3Back" value="Back"></div>
+        </div>
+
+    </form>
+    <script src="lab5.js"></script>
+</body>
+
+</html>

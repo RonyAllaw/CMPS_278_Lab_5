@@ -1,0 +1,39 @@
+#pizza{width: 100px;
+margin-left: auto;
+margin-right: auto;
+display: block;}
+fieldset{border-radius: 5px;}
+body{background-color: cyan; padding: 0rem 10rem;}
+.formheader{
+    text-align: center;
+}
+#form2 input{
+    width: 100%;
+    border-radius: 5px;
+}
+#form2 select{
+    width: 90%;
+    border-radius: 5px;
+}
+#form2 textarea{
+    width: 100%;
+}
+#OrderSummary{
+    margin: 0% 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: green;
+    border-style: solid;
+    border-width: thick;
+    background-color: #ffffff;
+   }
+.sidebysidebtns{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+}
+.sidebysidebtns input{
+    border-radius: 0px;
+    margin-right: 10px;
+
+}
